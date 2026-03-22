@@ -6,7 +6,7 @@
     "coords": [32.7478, -117.2534],
     "phone": "(619) 224-4700",
     "website": "https://www.pizzaport.com/brewpubs/ocean-beach",
-    "twitter": "pizzaportob",
+    "instagram": "pizzaportob",
     "hours": {
       "sun": { "open": "11:00", "close": "22:00" },
       "mon": { "open": "11:00", "close": "22:00" },
@@ -27,7 +27,7 @@
     "coords": [32.7463, -117.2493],
     "phone": null,
     "website": "https://obnoodlehouse.com/ob-noodle-house-bar-1502/",
-    "twitter": "obnoodlehouse_bar1502",
+    "instagram": "obnoodlehouse_bar1502",
     "hours": {
       "mon": { "open": "11:00", "close": "22:00" },
       "tue": { "open": "11:00", "close": "22:00" },
@@ -58,7 +58,7 @@
     "coords": [32.7472, -117.2534],
     "phone": null,
     "website": "https://raglanpublichouse.com/",
-    "twitter": "raglanpublichouse",
+    "instagram": "raglanpublichouse",
     "hours": {
       "mon": null,
       "tue": null,
@@ -79,7 +79,7 @@
     "coords": [32.7489, -117.2554],
     "phone": null,
     "website": "https://www.wonderlandob.com/",
-    "twitter": "wonderlandoceanbeach",
+    "instagram": "wonderlandoceanbeach",
     "hours": {
       "mon": null,
       "tue": null,
@@ -105,7 +105,7 @@
     "coords": [32.7455, -117.2499],
     "phone": "(619) 501-5440",
     "website": "https://www.thebowlob.com/",
-    "twitter": "thebowlob",
+    "instagram": "thebowlob",
     "hours": {
       "mon": { "open": "16:20", "close": "20:30" },
       "tue": { "open": "12:00", "close": "20:30" },

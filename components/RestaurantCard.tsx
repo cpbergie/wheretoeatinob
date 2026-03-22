@@ -137,9 +137,9 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
               📞 {r.phone}
             </a>
           )}
-          {r.twitter && (
-            <a href={`https://twitter.com/${r.twitter}`} target="_blank" rel="noopener noreferrer" style={{ color: "#4ECDC4", fontSize: "0.85rem", textDecoration: "none" }}>
-              𝕏 @{r.twitter}
+          {r.instagram && (
+            <a href={`https://instagram.com/${r.instagram}`} target="_blank" rel="noopener noreferrer" style={{ color: "#4ECDC4", fontSize: "0.85rem", textDecoration: "none" }}>
+              📸 @{r.instagram}
             </a>
           )}
         </div>

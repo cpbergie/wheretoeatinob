@@ -24,7 +24,7 @@ export interface Restaurant {
   coords: [number, number];
   phone: string | null;
   website: string;
-  twitter: string | null;
+  instagram: string | null;
   hours: Record<DayKey, DayHours | null>;
   happyHour: HappyHour | null;
   dailySpecials: DailySpecial[];
