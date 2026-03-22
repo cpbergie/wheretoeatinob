@@ -45,8 +45,8 @@ export default function Home() {
       {/* Hero Banner with OB Jetty photo */}
       <div style={{ position: "relative", height: "380px", overflow: "hidden" }}>
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Ocean_Beach_Pier%2C_San_Diego.jpg/1280px-Ocean_Beach_Pier%2C_San_Diego.jpg"
-          alt="Ocean Beach Pier"
+          src="/hero.webp"
+          alt="Ocean Beach San Diego"
           style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 40%" }}
         />
         {/* Dark overlay */}
