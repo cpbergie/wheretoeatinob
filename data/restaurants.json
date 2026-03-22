@@ -190,9 +190,39 @@
       "sat": { "open": "11:30", "close": "21:00" },
       "sun": { "open": "11:30", "close": "20:00" }
     },
-    "happyHour": null,
-    "dailySpecials": [],
-    "notes": "Fresh local seafood, fish tacos, market & grill. Happy hour details TBD."
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "start": "15:00",
+      "end": "17:00",
+      "deals": [
+        "$11 select specialty cocktails (Mezcal Penicillin, Prickly Pear Mojito, Blackberry Margarita, Mai Tai)",
+        "$6 green tea shots & kamikaze shots",
+        "$5.50 select drafts",
+        "$6 grilled or beer-battered fish taco",
+        "$13 calamari appetizer",
+        "$13 ceviche",
+        "$12 medium shrimp cocktail"
+      ]
+    },
+    "dailySpecials": [
+      {
+        "day": "mon",
+        "deals": ["Margarita & Mojito Monday all day: $11 margaritas & mojitos (house or specialty)"]
+      },
+      {
+        "day": "tue",
+        "deals": ["Taco Tuesday all day: $6 grilled fish tacos, $11 blackberry margarita & mai tai"]
+      },
+      {
+        "day": "fri",
+        "deals": ["Friday Oyster Night 4pm–close: $1.50 oysters, $6 oyster shooters, $11 lychee martini"]
+      },
+      {
+        "day": "sun",
+        "deals": ["Sunday Funday all day: $20 mimosa flight, $11 bloody mary"]
+      }
+    ],
+    "notes": "Fresh local seafood, fish tacos, market & grill. OB location only for specials."
   },
   {
     "id": "the-joint-ob",
