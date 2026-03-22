@@ -1,0 +1,137 @@
+[
+  {
+    "id": "pizza-port-ob",
+    "name": "Pizza Port Ocean Beach",
+    "address": "1956 Bacon St, Ocean Beach, CA 92107",
+    "coords": [32.7478, -117.2534],
+    "phone": "(619) 224-4700",
+    "website": "https://www.pizzaport.com/brewpubs/ocean-beach",
+    "twitter": "pizzaportob",
+    "hours": {
+      "sun": { "open": "11:00", "close": "22:00" },
+      "mon": { "open": "11:00", "close": "22:00" },
+      "tue": { "open": "11:00", "close": "22:00" },
+      "wed": { "open": "11:00", "close": "22:00" },
+      "thu": { "open": "11:00", "close": "22:00" },
+      "fri": { "open": "11:00", "close": "23:00" },
+      "sat": { "open": "11:00", "close": "23:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "No happy hour or specials currently. Craft brewery + pizza."
+  },
+  {
+    "id": "ob-noodle-house-1502",
+    "name": "OB Noodle House Bar 1502",
+    "address": "1502 Niagara Ave, Ocean Beach, CA 92107",
+    "coords": [32.7463, -117.2493],
+    "phone": null,
+    "website": "https://obnoodlehouse.com/ob-noodle-house-bar-1502/",
+    "twitter": "obnoodlehouse_bar1502",
+    "hours": {
+      "mon": { "open": "11:00", "close": "22:00" },
+      "tue": { "open": "11:00", "close": "22:00" },
+      "wed": { "open": "11:00", "close": "22:00" },
+      "thu": { "open": "11:00", "close": "22:00" },
+      "fri": { "open": "11:00", "close": "22:00" },
+      "sat": { "open": "11:00", "close": "22:00" },
+      "sun": { "open": "11:00", "close": "22:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "start": "12:00",
+      "end": "18:00",
+      "deals": ["$5 beers"]
+    },
+    "dailySpecials": [
+      {
+        "day": "all",
+        "deals": ["$5 Asian style pork belly tacos", "$12 Marga-liter stein"]
+      }
+    ],
+    "notes": null
+  },
+  {
+    "id": "raglan-public-house",
+    "name": "Raglan Public House",
+    "address": "1851 Bacon St, Ocean Beach, CA 92107",
+    "coords": [32.7472, -117.2534],
+    "phone": null,
+    "website": "https://raglanpublichouse.com/",
+    "twitter": "raglanpublichouse",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Hours and happy hour TBD — to be updated."
+  },
+  {
+    "id": "wonderland-ob",
+    "name": "Wonderland Ocean Pub",
+    "address": "5083 Santa Monica Ave, Ocean Beach, CA 92107",
+    "coords": [32.7489, -117.2554],
+    "phone": null,
+    "website": "https://www.wonderlandob.com/",
+    "twitter": "wonderlandoceanbeach",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "start": "15:00",
+      "end": "17:00",
+      "deals": ["$5 drafts", "$8 house wine", "$10 select cocktails", "Food specials"]
+    },
+    "dailySpecials": [],
+    "notes": "Beachfront bar with ocean views. Hours TBD."
+  },
+  {
+    "id": "the-bowl-ob",
+    "name": "The Bowl",
+    "address": "4953 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7455, -117.2499],
+    "phone": "(619) 501-5440",
+    "website": "https://www.thebowlob.com/",
+    "twitter": "thebowlob",
+    "hours": {
+      "mon": { "open": "16:20", "close": "20:30" },
+      "tue": { "open": "12:00", "close": "20:30" },
+      "wed": { "open": "12:00", "close": "20:30" },
+      "thu": { "open": "12:00", "close": "20:30" },
+      "fri": { "open": "12:00", "close": "21:30" },
+      "sat": { "open": "12:00", "close": "21:30" },
+      "sun": { "open": "12:00", "close": "20:30" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "15:00",
+      "end": "18:00",
+      "deals": [
+        "$2 off all ramens & izakaya items",
+        "$2 off sake & wine",
+        "$5 drafts (24 taps)",
+        "$3.50 Sapporo pints (all day Wednesday)"
+      ]
+    },
+    "dailySpecials": [
+      {
+        "day": "wed",
+        "deals": ["$3.50 Sapporo pints all day"]
+      }
+    ],
+    "notes": "Ramen & izakaya. Dog-friendly patio. Monday opens at 4:20pm."
+  }
+]

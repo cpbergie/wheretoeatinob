@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Where to Eat in OB 🌊
 
-## Getting Started
+Happy hours, daily deals, and good vibes in Ocean Beach, San Diego.
 
-First, run the development server:
+## What It Is
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+A mobile-friendly website that tracks happy hour times and daily specials for bars and restaurants in Ocean Beach, CA. Features a live "Happening Now" filter that shows what's active at the current moment, plus a map view.
+
+## Data
+
+All restaurant data lives in [`data/restaurants.json`](data/restaurants.json). Each entry has:
+
+```json
+{
+  "id": "unique-slug",
+  "name": "Restaurant Name",
+  "address": "Street address",
+  "coords": [latitude, longitude],
+  "phone": "(619) 555-1234",
+  "website": "https://...",
+  "twitter": "twitterhandle",
+  "hours": {
+    "mon": { "open": "11:00", "close": "22:00" },
+    "tue": null
+  },
+  "happyHour": {
+    "days": ["mon", "tue", "wed", "thu", "fri"],
+    "start": "15:00",
+    "end": "18:00",
+    "deals": ["$5 drafts", "$8 wine"]
+  },
+  "dailySpecials": [
+    { "day": "wed", "deals": ["$3.50 Sapporo all day"] },
+    { "day": "all", "deals": ["$5 tacos"] }
+  ],
+  "notes": "Optional notes"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Times use 24-hour format. Days use: `sun mon tue wed thu fri sat`. A `null` hours entry means closed that day or hours unknown.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Leaflet + OpenStreetMap (no API key needed)
 
-## Learn More
+## Dev
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Auto-deploys to Vercel on push to `main`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Updated weekly by a local 🤙*

@@ -1,65 +1,110 @@
-import Image from "next/image";
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
+import restaurantsData from "@/data/restaurants.json";
+import { Restaurant } from "@/lib/types";
+import RestaurantCard from "@/components/RestaurantCard";
+import HappeningNow from "@/components/HappeningNow";
+import { isHappyHourNow, isOpenNow } from "@/lib/timeUtils";
+
+const OBMap = dynamic(() => import("@/components/OBMap"), { ssr: false });
+
+const restaurants = restaurantsData as Restaurant[];
 
 export default function Home() {
+  const [showAll, setShowAll] = useState(true);
+  const [mapFocusId, setMapFocusId] = useState<string | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
+
+  const sortedRestaurants = [...restaurants].sort((a, b) => {
+    const aHappy = isHappyHourNow(a.happyHour) ? 2 : isOpenNow(a) ? 1 : 0;
+    const bHappy = isHappyHourNow(b.happyHour) ? 2 : isOpenNow(b) ? 1 : 0;
+    return bHappy - aHappy;
+  });
+
+  const displayedRestaurants = showAll
+    ? sortedRestaurants
+    : sortedRestaurants.filter(r => isOpenNow(r) || isHappyHourNow(r.happyHour));
+
+  const handleMapFocus = (id: string) => {
+    setMapFocusId(id);
+    document.getElementById("map-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen bg-sand-50">
+      {/* Hero */}
+      <div className="bg-gradient-to-br from-ocean-dark via-ocean to-ocean-light text-white">
+        {/* Wave SVG divider top decoration */}
+        <div className="px-6 pt-12 pb-6 text-center">
+          <h1 className="font-pacifico text-4xl md:text-6xl text-sand-200 drop-shadow-md leading-tight">
+            Where to Eat in OB
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <div className="text-4xl mt-2">🌊</div>
+          <p className="mt-3 text-sand-100 text-lg md:text-xl max-w-xl mx-auto">
+            Happy hours, daily deals, and good vibes in Ocean Beach, San Diego.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#happening-now"
+            className="inline-block mt-6 bg-coral hover:bg-coral-dark text-white font-bold px-8 py-3 rounded-full shadow-lg transition-colors text-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            What&apos;s Happening Now 🍺
           </a>
         </div>
-      </main>
-    </div>
+        {/* Wave divider */}
+        <svg viewBox="0 0 1440 60" className="w-full block -mb-1" preserveAspectRatio="none">
+          <path
+            d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"
+            fill="#FDF8EE"
+          />
+        </svg>
+      </div>
+
+      {/* Main content */}
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        {/* Happening Now Banner */}
+        {mounted && (
+          <HappeningNow
+            restaurants={restaurants}
+            showAll={showAll}
+            onToggle={() => setShowAll(v => !v)}
+          />
+        )}
+
+        {/* Restaurant Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {displayedRestaurants.map((r) => (
+            <RestaurantCard key={r.id} restaurant={r} onMapFocus={handleMapFocus} />
+          ))}
+          {!showAll && displayedRestaurants.length === 0 && (
+            <div className="col-span-2 text-center py-12 text-gray-400">
+              <div className="text-4xl mb-3">😴</div>
+              <p className="text-lg font-semibold">Nothing active right now</p>
+              <button
+                onClick={() => setShowAll(true)}
+                className="mt-4 text-ocean underline"
+              >
+                View all places
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Map */}
+        <div id="map-section" className="mb-12">
+          <h2 className="font-pacifico text-2xl text-ocean-dark mb-4">📍 Find &apos;em on the Map</h2>
+          <OBMap restaurants={restaurants} focusId={mapFocusId} />
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-ocean-dark text-sand-200 text-center py-6 px-4">
+        <p className="font-pacifico text-lg text-sand-300 mb-1">Where to Eat in OB 🤙</p>
+        <p className="text-sm text-sand-200/70">Updated weekly by a local · Ocean Beach, San Diego</p>
+      </footer>
+    </main>
   );
 }
