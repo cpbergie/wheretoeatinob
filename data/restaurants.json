@@ -60,17 +60,17 @@
     "website": "https://raglanpublichouse.com/",
     "instagram": "raglanpublichouse",
     "hours": {
-      "mon": null,
-      "tue": null,
-      "wed": null,
-      "thu": null,
-      "fri": null,
-      "sat": null,
-      "sun": null
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "22:00" },
+      "sat": { "open": "10:00", "close": "22:00" },
+      "sun": { "open": "10:00", "close": "21:00" }
     },
     "happyHour": null,
     "dailySpecials": [],
-    "notes": "Hours and happy hour TBD — to be updated."
+    "notes": "Grass-fed burgers, craft beer, dog-friendly patio. Happy hour TBD."
   },
   {
     "id": "wonderland-ob",
