@@ -53,13 +53,9 @@ export default function Home() {
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(7,31,51,0.3) 0%, rgba(7,31,51,0.75) 100%)" }} />
         {/* Hero text */}
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 1rem" }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.75rem" }}>
-            <img src="/seagull.jpg" alt="OB seagull" style={{ width: "60px", height: "51px", objectFit: "contain", filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.5))" }} />
-            <h1 style={{ fontFamily: "var(--font-righteous)", fontSize: "clamp(2.2rem, 7vw, 4rem)", color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.6)", lineHeight: 1.1, margin: 0 }}>
-              Where to Eat in OB
-            </h1>
-            <img src="/seagull.jpg" alt="" aria-hidden="true" style={{ width: "60px", height: "51px", objectFit: "contain", filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.5)) scaleX(-1)", transform: "scaleX(-1)" }} />
-          </div>
+          <h1 style={{ fontFamily: "var(--font-righteous)", fontSize: "clamp(2.2rem, 7vw, 4rem)", color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.6)", lineHeight: 1.1, margin: 0 }}>
+            Where to Eat in OB
+          </h1>
           <p style={{ marginTop: "0.75rem", color: "#c8e6f5", fontSize: "clamp(1rem, 3vw, 1.25rem)", textShadow: "0 1px 6px rgba(0,0,0,0.5)", maxWidth: "520px" }}>
             Happy hours, daily deals, and good vibes in Ocean Beach, San Diego.
           </p>
