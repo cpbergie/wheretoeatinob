@@ -32,7 +32,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
   const todayHours = r.hours[todayKey];
   const todaySpecials = getTodaySpecials(r);
 
-  const borderColor = "#C65D00";
+  const borderColor = "#E8854A";
   const headerBg = mounted && happyHour ? "rgba(255,107,107,0.08)" : "transparent";
 
   return (
