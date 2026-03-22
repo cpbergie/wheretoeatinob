@@ -39,9 +39,9 @@
     },
     "happyHour": {
       "days": ["mon", "tue", "wed", "thu", "fri"],
-      "start": "12:00",
+      "start": "13:00",
       "end": "18:00",
-      "deals": ["$5 beers"]
+      "deals": ["$5 beers, well drinks & wines"]
     },
     "dailySpecials": [
       {
