@@ -77,17 +77,17 @@
     "name": "Wonderland Ocean Pub",
     "address": "5083 Santa Monica Ave, Ocean Beach, CA 92107",
     "coords": [32.7489, -117.2554],
-    "phone": null,
+    "phone": "(619) 255-3358",
     "website": "https://www.wonderlandob.com/",
     "instagram": "wonderlandoceanbeach",
     "hours": {
-      "mon": null,
-      "tue": null,
-      "wed": null,
-      "thu": null,
-      "fri": null,
-      "sat": null,
-      "sun": null
+      "mon": { "open": "11:30", "close": "23:00" },
+      "tue": { "open": "11:30", "close": "23:00" },
+      "wed": { "open": "11:30", "close": "23:00" },
+      "thu": { "open": "11:30", "close": "23:00" },
+      "fri": { "open": "11:00", "close": "23:00" },
+      "sat": { "open": "10:00", "close": "23:00" },
+      "sun": { "open": "10:00", "close": "23:00" }
     },
     "happyHour": {
       "days": ["mon", "tue", "wed", "thu", "fri"],
@@ -96,7 +96,7 @@
       "deals": ["$5 drafts", "$8 house wine", "$10 select cocktails", "Food specials"]
     },
     "dailySpecials": [],
-    "notes": "Beachfront bar with ocean views. Hours TBD."
+    "notes": "Beachfront bar with ocean views."
   },
   {
     "id": "the-bowl-ob",
@@ -133,5 +133,83 @@
       }
     ],
     "notes": "Ramen & izakaya. Dog-friendly patio. Monday opens at 4:20pm."
+  },
+  {
+    "id": "la-dona-ob",
+    "name": "La Doña",
+    "address": "1852 Bacon St, Ocean Beach, CA 92107",
+    "coords": [32.7471, -117.2534],
+    "phone": null,
+    "website": "https://www.ladonaob.com/",
+    "instagram": "ladonacantina",
+    "hours": {
+      "mon": { "open": "12:00", "close": "21:00" },
+      "tue": { "open": "12:00", "close": "21:00" },
+      "wed": { "open": "12:00", "close": "21:00" },
+      "thu": { "open": "12:00", "close": "21:30" },
+      "fri": { "open": "12:00", "close": "21:30" },
+      "sat": { "open": "10:30", "close": "21:30" },
+      "sun": { "open": "10:30", "close": "21:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "start": "14:30",
+      "end": "17:00",
+      "deals": ["Food & drink specials"]
+    },
+    "dailySpecials": [
+      {
+        "day": "tue",
+        "deals": ["Taco Tuesday specials all day"]
+      },
+      {
+        "day": "sun",
+        "deals": ["Locals Sunday: $3 Calidad cans", "Brunch menu 10:30am–1:30pm"]
+      },
+      {
+        "day": "sat",
+        "deals": ["Brunch menu 10:30am–1:30pm"]
+      }
+    ],
+    "notes": "Mexican restaurant. Brunch on weekends."
+  },
+  {
+    "id": "the-joint-ob",
+    "name": "The Joint OB",
+    "address": "4906 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7453, -117.2498],
+    "phone": null,
+    "website": "https://thejointob.com/",
+    "instagram": "thejointob",
+    "hours": {
+      "mon": { "open": "12:00", "close": "21:00" },
+      "tue": { "open": "12:00", "close": "21:00" },
+      "wed": { "open": "12:00", "close": "21:00" },
+      "thu": { "open": "12:00", "close": "21:00" },
+      "fri": { "open": "12:00", "close": "22:00" },
+      "sat": { "open": "12:00", "close": "22:00" },
+      "sun": { "open": "12:00", "close": "21:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "12:00",
+      "end": "18:00",
+      "deals": ["Happy hour daily noon–6pm", "26 craft taps"]
+    },
+    "dailySpecials": [
+      {
+        "day": "mon",
+        "deals": ["$5 local drafts all day"]
+      },
+      {
+        "day": "tue",
+        "deals": ["$5 local IPA drafts all day"]
+      },
+      {
+        "day": "wed",
+        "deals": ["$5 OB Farmers Market rotating draft all day"]
+      }
+    ],
+    "notes": "Sushi, tapas & craft drinks. Sister restaurant to The Bowl."
   }
 ]
