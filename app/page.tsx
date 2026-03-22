@@ -50,7 +50,7 @@ export default function Home() {
           style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 40%" }}
         />
         {/* Dark overlay */}
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(7,31,51,0.3) 0%, rgba(7,31,51,0.75) 100%)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(7,31,51,0.55) 100%)" }} />
         {/* Hero text */}
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 1rem" }}>
           <h1 style={{ fontFamily: "var(--font-righteous)", fontSize: "clamp(2.2rem, 7vw, 4rem)", color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.6)", lineHeight: 1.1, margin: 0 }}>
