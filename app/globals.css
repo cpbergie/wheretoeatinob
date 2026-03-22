@@ -1,20 +1,29 @@
 @import "tailwindcss";
 
-:root {
-  --font-pacifico: 'Pacifico', cursive;
+@theme {
+  --color-sand-50: #FDF8EE;
+  --color-sand-100: #F5E6C8;
+  --color-sand-200: #EDD49E;
+  --color-sand-300: #E8C87A;
+  --color-ocean-light: #2E86AB;
+  --color-ocean: #1B6CA8;
+  --color-ocean-dark: #0e3d61;
+  --color-ocean-deep: #071f33;
+  --color-coral: #FF6B6B;
+  --color-coral-dark: #E85555;
+  --color-wave: #4ECDC4;
+  --font-righteous: 'Righteous', sans-serif;
   --font-inter: 'Inter', sans-serif;
 }
 
 body {
   font-family: var(--font-inter);
+  background-color: #0e3d61;
+  color: #fff;
 }
 
-.font-pacifico {
-  font-family: var(--font-pacifico);
-}
-
-.font-inter {
-  font-family: var(--font-inter);
+.font-righteous {
+  font-family: var(--font-righteous);
 }
 
 /* Leaflet fixes */

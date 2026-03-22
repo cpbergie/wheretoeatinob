@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Pacifico, Inter } from "next/font/google";
+import { Righteous, Inter } from "next/font/google";
 import "./globals.css";
 
-const pacifico = Pacifico({
+const righteous = Righteous({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-pacifico",
+  variable: "--font-righteous",
 });
 
 const inter = Inter({
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pacifico.variable} ${inter.variable} font-inter bg-sand-50`}>
+      <body className={`${righteous.variable} ${inter.variable}`}>
         {children}
       </body>
     </html>

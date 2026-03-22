@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Restaurant } from "@/lib/types";
 import { isHappyHourNow, isOpenNow, formatCurrentTime } from "@/lib/timeUtils";
 
@@ -8,45 +7,49 @@ interface Props {
   restaurants: Restaurant[];
   showAll: boolean;
   onToggle: () => void;
+  tick: number;
 }
 
-export default function HappeningNow({ restaurants, showAll, onToggle }: Props) {
-  const [mounted, setMounted] = useState(false);
-  const [timeStr, setTimeStr] = useState("");
-  const [happyCount, setHappyCount] = useState(0);
-  const [openCount, setOpenCount] = useState(0);
-
-  useEffect(() => {
-    setMounted(true);
-    const update = () => {
-      setTimeStr(formatCurrentTime());
-      setHappyCount(restaurants.filter(r => isHappyHourNow(r.happyHour)).length);
-      setOpenCount(restaurants.filter(r => isOpenNow(r)).length);
-    };
-    update();
-    const interval = setInterval(update, 60000);
-    return () => clearInterval(interval);
-  }, [restaurants]);
-
-  if (!mounted) return null;
+export default function HappeningNow({ restaurants, showAll, onToggle, tick: _tick }: Props) {
+  const timeStr = formatCurrentTime();
+  const happyCount = restaurants.filter(r => isHappyHourNow(r.happyHour)).length;
+  const openCount = restaurants.filter(r => isOpenNow(r)).length;
 
   return (
-    <div id="happening-now" className="bg-ocean-dark text-white rounded-2xl p-6 mb-8 shadow-lg">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <div id="happening-now" style={{
+      backgroundColor: "#0e3d61",
+      border: "1px solid #1e5f8a",
+      borderRadius: "16px",
+      padding: "1.25rem 1.5rem",
+      boxShadow: "0 4px 20px rgba(0,0,0,0.3)"
+    }}>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "1rem" }}>
         <div>
-          <p className="text-sand-100 text-sm mb-1">🕐 {timeStr}</p>
+          <p style={{ color: "#8bb8d4", fontSize: "0.85rem", marginBottom: "0.25rem" }}>🕐 {timeStr}</p>
           {happyCount > 0 ? (
-            <p className="text-xl font-bold">
-              🍺 <span className="text-coral">{happyCount} {happyCount === 1 ? "spot has" : "spots have"}</span> happy hour right now!
+            <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "#fff", margin: 0 }}>
+              🍺 <span style={{ color: "#FF6B6B" }}>{happyCount} {happyCount === 1 ? "spot has" : "spots have"}</span> happy hour right now!
             </p>
           ) : (
-            <p className="text-xl font-bold text-sand-200">No happy hours active right now</p>
+            <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "#c8e6f5", margin: 0 }}>No happy hours active right now</p>
           )}
-          <p className="text-sand-200 text-sm mt-1">{openCount} of {restaurants.length} places currently open</p>
+          <p style={{ color: "#8bb8d4", fontSize: "0.85rem", marginTop: "0.25rem" }}>
+            {openCount} of {restaurants.length} places currently open
+          </p>
         </div>
         <button
           onClick={onToggle}
-          className="shrink-0 bg-coral hover:bg-coral-dark text-white font-semibold px-5 py-2 rounded-full transition-colors text-sm"
+          style={{
+            backgroundColor: "#FF6B6B",
+            color: "#fff",
+            fontWeight: 700,
+            padding: "0.5rem 1.25rem",
+            borderRadius: "999px",
+            border: "none",
+            cursor: "pointer",
+            fontSize: "0.9rem",
+            whiteSpace: "nowrap"
+          }}
         >
           {showAll ? "Show Active Only" : "View All Places"}
         </button>
