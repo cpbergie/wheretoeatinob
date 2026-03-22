@@ -32,7 +32,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
   const todayHours = r.hours[todayKey];
   const todaySpecials = getTodaySpecials(r);
 
-  const borderColor = mounted && happyHour ? "#FF6B6B" : mounted && open ? "#2E86AB" : "#1e3a52";
+  const borderColor = mounted && happyHour ? "#5BC8E8" : mounted && open ? "#2E86AB" : "#1e3a52";
   const headerBg = mounted && happyHour ? "rgba(255,107,107,0.08)" : "transparent";
 
   return (
@@ -62,8 +62,8 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", alignItems: "flex-end", flexShrink: 0 }}>
             {mounted && happyHour && (
-              <span style={{ backgroundColor: "#FF6B6B", color: "#fff", fontSize: "0.72rem", fontWeight: 700, padding: "0.2rem 0.6rem", borderRadius: "999px" }}>
-                🍺 HAPPY HOUR
+              <span style={{ backgroundColor: "#5BC8E8", color: "#fff", fontSize: "0.72rem", fontWeight: 700, padding: "0.2rem 0.6rem", borderRadius: "999px" }}>
+                🍻 HAPPY HOUR
               </span>
             )}
             {mounted && open && !happyHour && (
@@ -95,7 +95,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
           backgroundColor: happyHour ? "rgba(255,107,107,0.12)" : "rgba(255,255,255,0.04)",
           border: `1px solid ${happyHour ? "rgba(255,107,107,0.35)" : "rgba(255,255,255,0.08)"}`
         }}>
-          <p style={{ fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#FF6B6B", marginBottom: "0.3rem" }}>
+          <p style={{ fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#5BC8E8", marginBottom: "0.3rem" }}>
             🍹 Happy Hour
           </p>
           <p style={{ fontSize: "0.9rem", fontWeight: 600, color: "#c8e6f5" }}>

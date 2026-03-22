@@ -28,7 +28,7 @@ export default function HappeningNow({ restaurants, showAll, onToggle, tick: _ti
           <p style={{ color: "#8bb8d4", fontSize: "0.85rem", marginBottom: "0.25rem" }}>🕐 {timeStr}</p>
           {happyCount > 0 ? (
             <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "#fff", margin: 0 }}>
-              🍺 <span style={{ color: "#FF6B6B" }}>{happyCount} {happyCount === 1 ? "spot has" : "spots have"}</span> happy hour right now!
+              🍻 <span style={{ color: "#5BC8E8" }}>{happyCount} {happyCount === 1 ? "spot has" : "spots have"}</span> happy hour right now!
             </p>
           ) : (
             <p style={{ fontSize: "1.2rem", fontWeight: 700, color: "#c8e6f5", margin: 0 }}>No happy hours active right now</p>
@@ -40,7 +40,7 @@ export default function HappeningNow({ restaurants, showAll, onToggle, tick: _ti
         <button
           onClick={onToggle}
           style={{
-            backgroundColor: "#FF6B6B",
+            backgroundColor: "#5BC8E8",
             color: "#fff",
             fontWeight: 700,
             padding: "0.5rem 1.25rem",

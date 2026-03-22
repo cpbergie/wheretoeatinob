@@ -61,9 +61,9 @@ export default function Home() {
           </p>
           <a
             href="#happening-now"
-            style={{ marginTop: "1.25rem", backgroundColor: "#FF6B6B", color: "#fff", fontWeight: 700, padding: "0.65rem 2rem", borderRadius: "999px", textDecoration: "none", fontSize: "1.05rem", boxShadow: "0 4px 14px rgba(0,0,0,0.3)" }}
+            style={{ marginTop: "1.25rem", backgroundColor: "#5BC8E8", color: "#fff", fontWeight: 700, padding: "0.65rem 2rem", borderRadius: "999px", textDecoration: "none", fontSize: "1.05rem", boxShadow: "0 4px 14px rgba(0,0,0,0.3)" }}
           >
-            What&apos;s Happening Now 🍺
+            What&apos;s Happening Now 🍻
           </a>
         </div>
       </div>
