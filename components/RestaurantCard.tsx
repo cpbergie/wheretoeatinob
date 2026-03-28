@@ -47,7 +47,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
       }}
     >
       {/* Header */}
-      <div style={{ padding: "1.25rem 1.25rem 0.75rem", backgroundColor: headerBg }}>
+      <div style={{ padding: "1rem 1rem 0.75rem", backgroundColor: headerBg }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "0.75rem" }}>
           <div style={{ flex: 1 }}>
             <a
@@ -89,7 +89,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
       {/* Happy Hour */}
       {r.happyHour && (
         <div style={{
-          margin: "0.75rem 1.25rem",
+          margin: "0.75rem 1rem",
           padding: "0.75rem",
           borderRadius: "10px",
           backgroundColor: happyHour ? "rgba(255,107,107,0.12)" : "rgba(255,255,255,0.04)",
@@ -112,7 +112,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
       {/* Daily Specials */}
       {todaySpecials.length > 0 && (
         <div style={{
-          margin: "0.75rem 1.25rem",
+          margin: "0.75rem 1rem",
           padding: "0.75rem",
           borderRadius: "10px",
           backgroundColor: "rgba(78,205,196,0.08)",
@@ -130,7 +130,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
       )}
 
       {/* Footer row */}
-      <div style={{ padding: "0.75rem 1.25rem", borderTop: "1px solid rgba(255,255,255,0.07)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
+      <div style={{ padding: "0.75rem 1rem", borderTop: "1px solid rgba(255,255,255,0.07)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           {r.phone && (
             <a href={`tel:${r.phone}`} style={{ color: "#4ECDC4", fontSize: "0.85rem", textDecoration: "none" }}>
@@ -147,7 +147,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
       </div>
 
       {r.notes && (
-        <div style={{ padding: "0 1.25rem 1rem" }}>
+        <div style={{ padding: "0 1rem 1rem" }}>
           <p style={{ fontSize: "0.78rem", color: "#5a7a90", fontStyle: "italic" }}>{r.notes}</p>
         </div>
       )}
