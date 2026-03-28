@@ -9,7 +9,6 @@
     ],
     "phone": null,
     "website": "https://www.pizzaport.com/brewpubs/ocean-beach",
-    "instagram": "pizzaportob",
     "hours": {
       "sun": {
         "open": "11:00",
@@ -54,7 +53,6 @@
     ],
     "phone": null,
     "website": "https://obnoodlehouse.com/ob-noodle-house-bar-1502/",
-    "instagram": "obnoodlehouse_bar1502",
     "hours": {
       "mon": {
         "open": "11:00",
@@ -120,7 +118,6 @@
     ],
     "phone": null,
     "website": "https://raglanpublichouse.com/",
-    "instagram": "raglanpublichouse",
     "hours": {
       "mon": {
         "open": "11:00",
@@ -194,7 +191,6 @@
     ],
     "phone": null,
     "website": "https://www.wonderlandob.com/",
-    "instagram": "wonderlandoceanbeach",
     "hours": {
       "mon": {
         "open": "11:30",
@@ -255,7 +251,6 @@
     ],
     "phone": null,
     "website": "https://www.thebowlob.com/",
-    "instagram": "thebowlob",
     "hours": {
       "mon": {
         "open": "16:20",
@@ -325,7 +320,6 @@
     ],
     "phone": null,
     "website": "https://www.ladonaob.com/",
-    "instagram": "ladonacantina",
     "hours": {
       "mon": {
         "open": "12:00",
@@ -403,7 +397,6 @@
     ],
     "phone": null,
     "website": "https://bluewaterseafoodsandiego.com/",
-    "instagram": "bluewaterseafoodsd",
     "hours": {
       "mon": {
         "open": "11:30",
@@ -486,40 +479,85 @@
     "id": "northside-tavern",
     "name": "Northside Tavern",
     "address": "2228 Bacon St, Ocean Beach, CA 92107",
-    "coords": [32.7513, -117.2519],
+    "coords": [
+      32.7513,
+      -117.2519
+    ],
     "phone": null,
     "website": "https://northsidetavernob.com/",
-    "instagram": "northsidetavernob",
     "hours": {
-      "mon": { "open": "09:00", "close": "24:00" },
-      "tue": { "open": "09:00", "close": "24:00" },
-      "wed": { "open": "09:00", "close": "24:00" },
-      "thu": { "open": "09:00", "close": "24:00" },
-      "fri": { "open": "09:00", "close": "02:00" },
-      "sat": { "open": "09:00", "close": "02:00" },
-      "sun": { "open": "09:00", "close": "24:00" }
+      "mon": {
+        "open": "09:00",
+        "close": "24:00"
+      },
+      "tue": {
+        "open": "09:00",
+        "close": "24:00"
+      },
+      "wed": {
+        "open": "09:00",
+        "close": "24:00"
+      },
+      "thu": {
+        "open": "09:00",
+        "close": "24:00"
+      },
+      "fri": {
+        "open": "09:00",
+        "close": "02:00"
+      },
+      "sat": {
+        "open": "09:00",
+        "close": "02:00"
+      },
+      "sun": {
+        "open": "09:00",
+        "close": "24:00"
+      }
     },
     "happyHour": {
-      "days": ["mon"],
+      "days": [
+        "mon"
+      ],
       "start": "20:30",
       "end": "22:30",
-      "deals": ["Backwards Happy Hour — later night, better energy"]
+      "deals": [
+        "Backwards Happy Hour \u2014 later night, better energy"
+      ]
     },
     "dailySpecials": [
-      { "day": "mon", "deals": ["DJ 4EST spinning house & trap all night", "Backwards Happy Hour 8:30–10:30pm"] },
-      { "day": "wed", "deals": ["Trivia Night"] },
-      { "day": "fri", "deals": ["Disco Boogie w/ DJ Green T (first Friday of month)"] }
+      {
+        "day": "mon",
+        "deals": [
+          "DJ 4EST spinning house & trap all night",
+          "Backwards Happy Hour 8:30\u201310:30pm"
+        ]
+      },
+      {
+        "day": "wed",
+        "deals": [
+          "Trivia Night"
+        ]
+      },
+      {
+        "day": "fri",
+        "deals": [
+          "Disco Boogie w/ DJ Green T (first Friday of month)"
+        ]
+      }
     ],
-    "notes": "Sports bar with full kitchen open daily from 9am. Open until 2am Fri–Sat."
+    "notes": "Sports bar with full kitchen open daily from 9am. Open until 2am Fri\u2013Sat."
   },
   {
     "id": "ob-surf-lodge",
     "name": "OB Surf Lodge",
     "address": "5083 Santa Monica Ave #1F, Ocean Beach, CA 92107",
-    "coords": [32.7491, -117.2557],
+    "coords": [
+      32.7491,
+      -117.2557
+    ],
     "phone": null,
     "website": "https://obsurflodge.com/",
-    "instagram": "obsurflodge",
     "hours": {
       "mon": null,
       "tue": null,
@@ -530,7 +568,15 @@
       "sun": null
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
       "start": "15:30",
       "end": "17:30",
       "deals": [
@@ -547,31 +593,89 @@
     "id": "south-beach-bar-grill",
     "name": "South Beach Bar & Grill",
     "address": "5059 Newport Ave, Ocean Beach, CA 92107",
-    "coords": [32.7458, -117.2547],
+    "coords": [
+      32.7458,
+      -117.2547
+    ],
     "phone": null,
     "website": "https://southbeachob.com/",
-    "instagram": "southbeachob",
     "hours": {
-      "mon": { "open": "12:00", "close": "21:00" },
-      "tue": { "open": "12:00", "close": "21:00" },
-      "wed": { "open": "12:00", "close": "21:00" },
-      "thu": { "open": "12:00", "close": "21:00" },
-      "fri": { "open": "12:00", "close": "21:00" },
-      "sat": { "open": "12:00", "close": "21:00" },
-      "sun": { "open": "12:00", "close": "21:00" }
+      "mon": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "sat": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "sun": {
+        "open": "12:00",
+        "close": "21:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
       "start": "15:00",
       "end": "18:00",
-      "deals": ["Daily food & drink specials"]
+      "deals": [
+        "Daily food & drink specials"
+      ]
     },
     "dailySpecials": [
-      { "day": "tue", "deals": ["Taco Tuesday: $3.95 tacos all day (excl. lobster & halibut)", "$8 Patrón margaritas"] },
-      { "day": "thu", "deals": ["Taco Thursday: $3.95 tacos all day", "$5 pints from 3pm–close"] },
-      { "day": "fri", "deals": ["Fresh Oyster Friday: $6 for 6 shucked oysters, $2 peppered oyster shooters"] },
-      { "day": "sat", "deals": ["$4 mimosas & $6 house bloody marys until 2pm"] },
-      { "day": "sun", "deals": ["Bubble Bottle Sunday: $10 bottles bubbly, $6 bloody marys until 2pm"] }
+      {
+        "day": "tue",
+        "deals": [
+          "Taco Tuesday: $3.95 tacos all day (excl. lobster & halibut)",
+          "$8 Patr\u00f3n margaritas"
+        ]
+      },
+      {
+        "day": "thu",
+        "deals": [
+          "Taco Thursday: $3.95 tacos all day",
+          "$5 pints from 3pm\u2013close"
+        ]
+      },
+      {
+        "day": "fri",
+        "deals": [
+          "Fresh Oyster Friday: $6 for 6 shucked oysters, $2 peppered oyster shooters"
+        ]
+      },
+      {
+        "day": "sat",
+        "deals": [
+          "$4 mimosas & $6 house bloody marys until 2pm"
+        ]
+      },
+      {
+        "day": "sun",
+        "deals": [
+          "Bubble Bottle Sunday: $10 bottles bubbly, $6 bloody marys until 2pm"
+        ]
+      }
     ],
     "notes": "Home of the world-famous Mahi fish taco. Ocean views, 22 tequilas, 40+ beers. Open since 1992."
   },
@@ -579,24 +683,57 @@
     "id": "the-harp-ob",
     "name": "The Harp",
     "address": "4935 Newport Ave, Ocean Beach, CA 92107",
-    "coords": [32.7454, -117.2503],
+    "coords": [
+      32.7454,
+      -117.2503
+    ],
     "phone": null,
     "website": "https://theharpoceanbeach.com/",
-    "instagram": "theharpob",
     "hours": {
-      "mon": { "open": "12:00", "close": "02:00" },
-      "tue": { "open": "12:00", "close": "02:00" },
-      "wed": { "open": "12:00", "close": "02:00" },
-      "thu": { "open": "12:00", "close": "02:00" },
-      "fri": { "open": "12:00", "close": "02:00" },
-      "sat": { "open": "11:00", "close": "02:00" },
-      "sun": { "open": "10:00", "close": "02:00" }
+      "mon": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "02:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "02:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "02:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
       "start": "16:20",
       "end": "18:00",
-      "deals": ["Half off all draft beers"]
+      "deals": [
+        "Half off all draft beers"
+      ]
     },
     "dailySpecials": [],
     "notes": "Irish pub & grill. Live music, pool table, dog-friendly back patio. Soccer, rugby, NFL, MLB. Open until 2am daily."
@@ -611,7 +748,6 @@
     ],
     "phone": null,
     "website": "https://tiltedstick.online/",
-    "instagram": "tiltedstickob",
     "hours": {
       "mon": {
         "open": "12:00",
@@ -672,7 +808,6 @@
     ],
     "phone": null,
     "website": "https://thejointob.com/",
-    "instagram": "thejointob",
     "hours": {
       "mon": {
         "open": "12:00",
