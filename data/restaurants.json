@@ -68,9 +68,28 @@
       "sat": { "open": "10:00", "close": "22:00" },
       "sun": { "open": "10:00", "close": "21:00" }
     },
-    "happyHour": null,
-    "dailySpecials": [],
-    "notes": "Grass-fed burgers, craft beer, dog-friendly patio. Happy hour TBD."
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "fri"],
+      "start": "15:00",
+      "end": "18:00",
+      "deals": [
+        "$9 slider & chips (Bare Lil' Lamb, Hogs 'N' Heffers, Meso Tasty, Black Bean Kiwilango)",
+        "$10 munchies (Pretzel Bites, NZ Onion Dip & Chips, Sausage Roll & Fries, Cup of Chili & Chips)",
+        "$6 beer & wine (select drafts, Maui Hard Lemonade, House Red, House White, Opera Prima Brut)",
+        "$10 cocktails (Gin Drink, Tequila Drink, Vodka Mule, Sangria, New Zealand 45)"
+      ]
+    },
+    "dailySpecials": [
+      {
+        "day": "tue",
+        "deals": ["$15 burger & fries all day (Qtr Pound McDowell, Average Joe, or Wagyu Smash)", "Add house beer for $5"]
+      },
+      {
+        "day": "wed",
+        "deals": ["Happy hour drink prices all night long"]
+      }
+    ],
+    "notes": "Grass-fed burgers, craft beer, NZ-inspired pub. Happy hour weekdays 3-6pm except Thursday. Lunch special Mon-Fri 11am-2pm."
   },
   {
     "id": "wonderland-ob",
