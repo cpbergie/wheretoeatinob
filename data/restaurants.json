@@ -244,6 +244,35 @@
     "notes": "Fresh local seafood, fish tacos, market & grill. OB location only for specials."
   },
   {
+    "id": "tilted-stick",
+    "name": "The Tilted Stick Bar & Grill",
+    "address": "4970 Voltaire St, Ocean Beach, CA 92107",
+    "coords": [32.7444, -117.2509],
+    "phone": "(619) 684-0089",
+    "website": "https://tiltedstick.online/",
+    "instagram": "tiltedstickob",
+    "hours": {
+      "mon": { "open": "12:00", "close": "23:00" },
+      "tue": { "open": "12:00", "close": "23:00" },
+      "wed": { "open": "12:00", "close": "23:00" },
+      "thu": { "open": "12:00", "close": "23:00" },
+      "fri": { "open": "12:00", "close": "23:00" },
+      "sat": { "open": "12:00", "close": "23:00" },
+      "sun": { "open": "12:00", "close": "23:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "12:00",
+      "end": "17:00",
+      "deals": [
+        "$10 burger + fries + beer (before 5pm)",
+        "$6 beer + well shot all day"
+      ]
+    },
+    "dailySpecials": [],
+    "notes": "Classic OB dive bar. Family-friendly until 8pm. Outdoor seating. Plenty of TVs for sports."
+  },
+  {
     "id": "the-joint-ob",
     "name": "The Joint OB",
     "address": "4906 Newport Ave, Ocean Beach, CA 92107",
