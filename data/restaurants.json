@@ -3,18 +3,42 @@
     "id": "pizza-port-ob",
     "name": "Pizza Port Ocean Beach",
     "address": "1956 Bacon St, Ocean Beach, CA 92107",
-    "coords": [32.7478, -117.2534],
-    "phone": "(619) 224-4700",
+    "coords": [
+      32.7478,
+      -117.2534
+    ],
+    "phone": null,
     "website": "https://www.pizzaport.com/brewpubs/ocean-beach",
     "instagram": "pizzaportob",
     "hours": {
-      "sun": { "open": "11:00", "close": "22:00" },
-      "mon": { "open": "11:00", "close": "22:00" },
-      "tue": { "open": "11:00", "close": "22:00" },
-      "wed": { "open": "11:00", "close": "22:00" },
-      "thu": { "open": "11:00", "close": "22:00" },
-      "fri": { "open": "11:00", "close": "23:00" },
-      "sat": { "open": "11:00", "close": "23:00" }
+      "sun": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "mon": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "23:00"
+      }
     },
     "happyHour": null,
     "dailySpecials": [],
@@ -24,29 +48,64 @@
     "id": "ob-noodle-house-1502",
     "name": "OB Noodle House Bar 1502",
     "address": "1502 Niagara Ave, Ocean Beach, CA 92107",
-    "coords": [32.7463, -117.2493],
+    "coords": [
+      32.7463,
+      -117.2493
+    ],
     "phone": null,
     "website": "https://obnoodlehouse.com/ob-noodle-house-bar-1502/",
     "instagram": "obnoodlehouse_bar1502",
     "hours": {
-      "mon": { "open": "11:00", "close": "22:00" },
-      "tue": { "open": "11:00", "close": "22:00" },
-      "wed": { "open": "11:00", "close": "22:00" },
-      "thu": { "open": "11:00", "close": "22:00" },
-      "fri": { "open": "11:00", "close": "22:00" },
-      "sat": { "open": "11:00", "close": "22:00" },
-      "sun": { "open": "11:00", "close": "22:00" }
+      "mon": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "11:00",
+        "close": "22:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
       "start": "13:00",
       "end": "18:00",
-      "deals": ["$5 beers, well drinks & wines"]
+      "deals": [
+        "$5 beers, well drinks & wines"
+      ]
     },
     "dailySpecials": [
       {
         "day": "all",
-        "deals": ["$5 Asian style pork belly tacos", "$12 Marga-liter stein"]
+        "deals": [
+          "$5 Asian style pork belly tacos",
+          "$12 Marga-liter stein"
+        ]
       }
     ],
     "notes": null
@@ -55,21 +114,50 @@
     "id": "raglan-public-house",
     "name": "Raglan Public House",
     "address": "1851 Bacon St, Ocean Beach, CA 92107",
-    "coords": [32.7472, -117.2534],
+    "coords": [
+      32.7472,
+      -117.2534
+    ],
     "phone": null,
     "website": "https://raglanpublichouse.com/",
     "instagram": "raglanpublichouse",
     "hours": {
-      "mon": { "open": "11:00", "close": "21:00" },
-      "tue": { "open": "11:00", "close": "21:00" },
-      "wed": { "open": "11:00", "close": "21:00" },
-      "thu": { "open": "11:00", "close": "21:00" },
-      "fri": { "open": "11:00", "close": "22:00" },
-      "sat": { "open": "10:00", "close": "22:00" },
-      "sun": { "open": "10:00", "close": "21:00" }
+      "mon": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "21:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "fri"
+      ],
       "start": "15:00",
       "end": "18:00",
       "deals": [
@@ -82,11 +170,16 @@
     "dailySpecials": [
       {
         "day": "tue",
-        "deals": ["$15 burger & fries all day (Qtr Pound McDowell, Average Joe, or Wagyu Smash)", "Add house beer for $5"]
+        "deals": [
+          "$15 burger & fries all day (Qtr Pound McDowell, Average Joe, or Wagyu Smash)",
+          "Add house beer for $5"
+        ]
       },
       {
         "day": "wed",
-        "deals": ["Happy hour drink prices all night long"]
+        "deals": [
+          "Happy hour drink prices all night long"
+        ]
       }
     ],
     "notes": "Grass-fed burgers, craft beer, NZ-inspired pub. Happy hour weekdays 3-6pm except Thursday. Lunch special Mon-Fri 11am-2pm."
@@ -95,24 +188,59 @@
     "id": "wonderland-ob",
     "name": "Wonderland Ocean Pub",
     "address": "5083 Santa Monica Ave, Ocean Beach, CA 92107",
-    "coords": [32.7489, -117.2554],
-    "phone": "(619) 255-3358",
+    "coords": [
+      32.7489,
+      -117.2554
+    ],
+    "phone": null,
     "website": "https://www.wonderlandob.com/",
     "instagram": "wonderlandoceanbeach",
     "hours": {
-      "mon": { "open": "11:30", "close": "23:00" },
-      "tue": { "open": "11:30", "close": "23:00" },
-      "wed": { "open": "11:30", "close": "23:00" },
-      "thu": { "open": "11:30", "close": "23:00" },
-      "fri": { "open": "11:00", "close": "23:00" },
-      "sat": { "open": "10:00", "close": "23:00" },
-      "sun": { "open": "10:00", "close": "23:00" }
+      "mon": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "10:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "10:00",
+        "close": "23:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
       "start": "15:00",
       "end": "17:00",
-      "deals": ["$5 drafts", "$8 house wine", "$10 select cocktails", "Food specials"]
+      "deals": [
+        "$5 drafts",
+        "$8 house wine",
+        "$10 select cocktails",
+        "Food specials"
+      ]
     },
     "dailySpecials": [],
     "notes": "Beachfront bar with ocean views."
@@ -121,21 +249,53 @@
     "id": "the-bowl-ob",
     "name": "The Bowl",
     "address": "4953 Newport Ave, Ocean Beach, CA 92107",
-    "coords": [32.7455, -117.2499],
-    "phone": "(619) 501-5440",
+    "coords": [
+      32.7455,
+      -117.2499
+    ],
+    "phone": null,
     "website": "https://www.thebowlob.com/",
     "instagram": "thebowlob",
     "hours": {
-      "mon": { "open": "16:20", "close": "20:30" },
-      "tue": { "open": "12:00", "close": "20:30" },
-      "wed": { "open": "12:00", "close": "20:30" },
-      "thu": { "open": "12:00", "close": "20:30" },
-      "fri": { "open": "12:00", "close": "21:30" },
-      "sat": { "open": "12:00", "close": "21:30" },
-      "sun": { "open": "12:00", "close": "20:30" }
+      "mon": {
+        "open": "16:20",
+        "close": "20:30"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "20:30"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "20:30"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "20:30"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "21:30"
+      },
+      "sat": {
+        "open": "12:00",
+        "close": "21:30"
+      },
+      "sun": {
+        "open": "12:00",
+        "close": "20:30"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
       "start": "15:00",
       "end": "18:00",
       "deals": [
@@ -148,46 +308,87 @@
     "dailySpecials": [
       {
         "day": "wed",
-        "deals": ["$3.50 Sapporo pints all day"]
+        "deals": [
+          "$3.50 Sapporo pints all day"
+        ]
       }
     ],
     "notes": "Ramen & izakaya. Dog-friendly patio. Monday opens at 4:20pm."
   },
   {
     "id": "la-dona-ob",
-    "name": "La Doña",
+    "name": "La Do\u00f1a",
     "address": "1852 Bacon St, Ocean Beach, CA 92107",
-    "coords": [32.7471, -117.2534],
+    "coords": [
+      32.7471,
+      -117.2534
+    ],
     "phone": null,
     "website": "https://www.ladonaob.com/",
     "instagram": "ladonacantina",
     "hours": {
-      "mon": { "open": "12:00", "close": "21:00" },
-      "tue": { "open": "12:00", "close": "21:00" },
-      "wed": { "open": "12:00", "close": "21:00" },
-      "thu": { "open": "12:00", "close": "21:30" },
-      "fri": { "open": "12:00", "close": "21:30" },
-      "sat": { "open": "10:30", "close": "21:30" },
-      "sun": { "open": "10:30", "close": "21:00" }
+      "mon": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "21:30"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "21:30"
+      },
+      "sat": {
+        "open": "10:30",
+        "close": "21:30"
+      },
+      "sun": {
+        "open": "10:30",
+        "close": "21:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
       "start": "14:30",
       "end": "17:00",
-      "deals": ["Food & drink specials"]
+      "deals": [
+        "Food & drink specials"
+      ]
     },
     "dailySpecials": [
       {
         "day": "tue",
-        "deals": ["Taco Tuesday specials all day"]
+        "deals": [
+          "Taco Tuesday specials all day"
+        ]
       },
       {
         "day": "sun",
-        "deals": ["Locals Sunday: $3 Calidad cans", "Brunch menu 10:30am–1:30pm"]
+        "deals": [
+          "Locals Sunday: $3 Calidad cans",
+          "Brunch menu 10:30am\u20131:30pm"
+        ]
       },
       {
         "day": "sat",
-        "deals": ["Brunch menu 10:30am–1:30pm"]
+        "deals": [
+          "Brunch menu 10:30am\u20131:30pm"
+        ]
       }
     ],
     "notes": "Mexican restaurant. Brunch on weekends."
@@ -196,21 +397,51 @@
     "id": "blue-water-seafood",
     "name": "Blue Water Seafood",
     "address": "5083 Santa Monica Ave, Ocean Beach, CA 92107",
-    "coords": [32.7490, -117.2556],
-    "phone": "(619) 255-8497",
+    "coords": [
+      32.749,
+      -117.2556
+    ],
+    "phone": null,
     "website": "https://bluewaterseafoodsandiego.com/",
     "instagram": "bluewaterseafoodsd",
     "hours": {
-      "mon": { "open": "11:30", "close": "20:00" },
-      "tue": { "open": "11:30", "close": "20:00" },
-      "wed": { "open": "11:30", "close": "20:00" },
-      "thu": { "open": "11:30", "close": "21:00" },
-      "fri": { "open": "11:30", "close": "21:00" },
-      "sat": { "open": "11:30", "close": "21:00" },
-      "sun": { "open": "11:30", "close": "20:00" }
+      "mon": {
+        "open": "11:30",
+        "close": "20:00"
+      },
+      "tue": {
+        "open": "11:30",
+        "close": "20:00"
+      },
+      "wed": {
+        "open": "11:30",
+        "close": "20:00"
+      },
+      "thu": {
+        "open": "11:30",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "11:30",
+        "close": "21:00"
+      },
+      "sat": {
+        "open": "11:30",
+        "close": "21:00"
+      },
+      "sun": {
+        "open": "11:30",
+        "close": "20:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
       "start": "15:00",
       "end": "17:00",
       "deals": [
@@ -226,19 +457,27 @@
     "dailySpecials": [
       {
         "day": "mon",
-        "deals": ["Margarita & Mojito Monday all day: $11 margaritas & mojitos (house or specialty)"]
+        "deals": [
+          "Margarita & Mojito Monday all day: $11 margaritas & mojitos (house or specialty)"
+        ]
       },
       {
         "day": "tue",
-        "deals": ["Taco Tuesday all day: $6 grilled fish tacos, $11 blackberry margarita & mai tai"]
+        "deals": [
+          "Taco Tuesday all day: $6 grilled fish tacos, $11 blackberry margarita & mai tai"
+        ]
       },
       {
         "day": "fri",
-        "deals": ["Friday Oyster Night 4pm–close: $1.50 oysters, $6 oyster shooters, $11 lychee martini"]
+        "deals": [
+          "Friday Oyster Night 4pm\u2013close: $1.50 oysters, $6 oyster shooters, $11 lychee martini"
+        ]
       },
       {
         "day": "sun",
-        "deals": ["Sunday Funday all day: $20 mimosa flight, $11 bloody mary"]
+        "deals": [
+          "Sunday Funday all day: $20 mimosa flight, $11 bloody mary"
+        ]
       }
     ],
     "notes": "Fresh local seafood, fish tacos, market & grill. OB location only for specials."
@@ -247,21 +486,53 @@
     "id": "tilted-stick",
     "name": "The Tilted Stick Bar & Grill",
     "address": "4970 Voltaire St, Ocean Beach, CA 92107",
-    "coords": [32.7444, -117.2509],
-    "phone": "(619) 684-0089",
+    "coords": [
+      32.7444,
+      -117.2509
+    ],
+    "phone": null,
     "website": "https://tiltedstick.online/",
     "instagram": "tiltedstickob",
     "hours": {
-      "mon": { "open": "12:00", "close": "23:00" },
-      "tue": { "open": "12:00", "close": "23:00" },
-      "wed": { "open": "12:00", "close": "23:00" },
-      "thu": { "open": "12:00", "close": "23:00" },
-      "fri": { "open": "12:00", "close": "23:00" },
-      "sat": { "open": "12:00", "close": "23:00" },
-      "sun": { "open": "12:00", "close": "23:00" }
+      "mon": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "sat": {
+        "open": "12:00",
+        "close": "23:00"
+      },
+      "sun": {
+        "open": "12:00",
+        "close": "23:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
       "start": "12:00",
       "end": "17:00",
       "deals": [
@@ -276,37 +547,78 @@
     "id": "the-joint-ob",
     "name": "The Joint OB",
     "address": "4906 Newport Ave, Ocean Beach, CA 92107",
-    "coords": [32.7453, -117.2498],
+    "coords": [
+      32.7453,
+      -117.2498
+    ],
     "phone": null,
     "website": "https://thejointob.com/",
     "instagram": "thejointob",
     "hours": {
-      "mon": { "open": "12:00", "close": "21:00" },
-      "tue": { "open": "12:00", "close": "21:00" },
-      "wed": { "open": "12:00", "close": "21:00" },
-      "thu": { "open": "12:00", "close": "21:00" },
-      "fri": { "open": "12:00", "close": "22:00" },
-      "sat": { "open": "12:00", "close": "22:00" },
-      "sun": { "open": "12:00", "close": "21:00" }
+      "mon": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "tue": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "wed": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "thu": {
+        "open": "12:00",
+        "close": "21:00"
+      },
+      "fri": {
+        "open": "12:00",
+        "close": "22:00"
+      },
+      "sat": {
+        "open": "12:00",
+        "close": "22:00"
+      },
+      "sun": {
+        "open": "12:00",
+        "close": "21:00"
+      }
     },
     "happyHour": {
-      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
       "start": "12:00",
       "end": "18:00",
-      "deals": ["Happy hour daily noon–6pm", "26 craft taps"]
+      "deals": [
+        "Happy hour daily noon\u20136pm",
+        "26 craft taps"
+      ]
     },
     "dailySpecials": [
       {
         "day": "mon",
-        "deals": ["$5 local drafts all day"]
+        "deals": [
+          "$5 local drafts all day"
+        ]
       },
       {
         "day": "tue",
-        "deals": ["$5 local IPA drafts all day"]
+        "deals": [
+          "$5 local IPA drafts all day"
+        ]
       },
       {
         "day": "wed",
-        "deals": ["$5 OB Farmers Market rotating draft all day"]
+        "deals": [
+          "$5 OB Farmers Market rotating draft all day"
+        ]
       }
     ],
     "notes": "Sushi, tapas & craft drinks. Sister restaurant to The Bowl."
