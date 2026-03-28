@@ -137,11 +137,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
               📞 {r.phone}
             </a>
           )}
-          {r.instagram && (
-            <a href={`https://instagram.com/${r.instagram}`} target="_blank" rel="noopener noreferrer" style={{ color: "#4ECDC4", fontSize: "0.85rem", textDecoration: "none" }}>
-              📸 @{r.instagram}
-            </a>
-          )}
+
         </div>
         {onMapFocus && (
           <button onClick={() => onMapFocus(r.id)} style={{ color: "#8bb8d4", background: "none", border: "none", cursor: "pointer", fontSize: "0.82rem" }}>
