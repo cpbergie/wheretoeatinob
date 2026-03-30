@@ -476,6 +476,36 @@
     "notes": "Fresh local seafood, fish tacos, market & grill. OB location only for specials."
   },
   {
+    "id": "city-tacos-ob",
+    "name": "City Tacos OB Playground",
+    "address": "4896 Voltaire St, Ocean Beach, CA 92107",
+    "coords": [32.7443, -117.2507],
+    "phone": null,
+    "website": "https://citytacossd.com/ob-playground/",
+    "hours": {
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "21:00" },
+      "sat": { "open": "11:00", "close": "21:00" },
+      "sun": { "open": "11:00", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [
+      {
+        "day": "tue",
+        "deals": [
+          "Taco Tuesday: 10% off all food",
+          "$2.50 Mexican beer",
+          "$5.50 Mexican tap beer (OB only)",
+          "Live DJ starting at 5pm"
+        ]
+      }
+    ],
+    "notes": "Taco spot with outdoor playground vibes. Free chips + guac or churros on $20+ online orders."
+  },
+  {
     "id": "ob-brewery",
     "name": "OB Brewery",
     "address": "5041 Newport Ave, Ocean Beach, CA 92107",
