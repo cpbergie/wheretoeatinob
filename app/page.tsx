@@ -1,20 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import restaurantsData from "@/data/restaurants.json";
 import { Restaurant } from "@/lib/types";
 import RestaurantCard from "@/components/RestaurantCard";
 import HappeningNow from "@/components/HappeningNow";
 import { isHappyHourNow, isOpenNow } from "@/lib/timeUtils";
 
-const OBMap = dynamic(() => import("@/components/OBMap"), { ssr: false });
-
 const restaurants = restaurantsData as Restaurant[];
 
 export default function Home() {
   const [showAll, setShowAll] = useState(true);
-  const [mapFocusId, setMapFocusId] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
   const [tick, setTick] = useState(0);
 
@@ -33,11 +29,6 @@ export default function Home() {
   const displayedRestaurants = showAll
     ? sortedRestaurants
     : sortedRestaurants.filter(r => isHappyHourNow(r.happyHour));
-
-  const handleMapFocus = (id: string) => {
-    setMapFocusId(id);
-    document.getElementById("map-section")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <main style={{ backgroundColor: "#071f33", minHeight: "100vh", color: "#fff", overflowX: "hidden" }}>
@@ -98,7 +89,7 @@ export default function Home() {
         `}</style>
         <div className="card-grid">
           {displayedRestaurants.map((r) => (
-            <RestaurantCard key={r.id} restaurant={r} onMapFocus={handleMapFocus} />
+            <RestaurantCard key={r.id} restaurant={r} />
           ))}
           {!showAll && displayedRestaurants.length === 0 && (
             <div style={{ gridColumn: "1/-1", textAlign: "center", padding: "3rem", color: "#8bb8d4" }}>
@@ -111,11 +102,6 @@ export default function Home() {
           )}
         </div>
 
-        {/* Map */}
-        <div id="map-section" style={{ marginBottom: "2.5rem" }}>
-          <h2 style={{ fontFamily: "var(--font-righteous)", fontSize: "clamp(1.2rem, 4vw, 1.6rem)", color: "#c8e6f5", marginBottom: "0.75rem" }}>📍 Find &apos;em on the Map</h2>
-          <OBMap restaurants={restaurants} focusId={mapFocusId} />
-        </div>
       </div>
 
       {/* Footer */}

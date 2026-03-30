@@ -71,7 +71,14 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
             >
               {r.name}
             </a>
-            <p style={{ color: "#8bb8d4", fontSize: "0.82rem", marginTop: "0.2rem" }}>{r.address}</p>
+            <a
+              href={`https://maps.google.com/?q=${encodeURIComponent(r.address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#8bb8d4", fontSize: "0.82rem", marginTop: "0.2rem", display: "block", textDecoration: "none" }}
+            >
+              📍 {r.address}
+            </a>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem", alignItems: "flex-end", flexShrink: 0 }}>
             {mounted && happyHour && (
@@ -190,11 +197,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
             </a>
           )}
         </div>
-        {onMapFocus && (
-          <button onClick={() => onMapFocus(r.id)} style={{ color: "#8bb8d4", background: "none", border: "none", cursor: "pointer", fontSize: "0.82rem" }}>
-            📍 Map
-          </button>
-        )}
+
       </div>
 
       {r.notes && (
