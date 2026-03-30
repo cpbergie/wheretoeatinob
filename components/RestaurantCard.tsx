@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Restaurant } from "@/lib/types";
 import {
   isOpenNow, isHappyHourNow, formatTime, getTodaySpecials,
-  getCurrentDayKey, DAY_LABELS
+  getCurrentDayKey, DAY_LABELS, DAY_KEYS
 } from "@/lib/timeUtils";
 
 interface Props {
@@ -16,6 +16,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
   const [happyHour, setHappyHour] = useState(false);
+  const [showAllSpecials, setShowAllSpecials] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -32,6 +33,18 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
   const todayHours = r.hours[todayKey];
   const todaySpecials = getTodaySpecials(r);
 
+  // Build full week specials map
+  const allSpecialsByDay = DAY_KEYS.map(day => {
+    const deals: string[] = [];
+    for (const special of r.dailySpecials) {
+      if (special.day === "all" || special.day === day) {
+        deals.push(...special.deals);
+      }
+    }
+    return { day, deals };
+  }).filter(d => d.deals.length > 0);
+
+  const hasWeeklySpecials = allSpecialsByDay.length > 0;
   const borderColor = "#E8854A";
   const headerBg = mounted && happyHour ? "rgba(255,107,107,0.08)" : "transparent";
 
@@ -92,8 +105,8 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
           margin: "0.75rem 1rem",
           padding: "0.75rem",
           borderRadius: "10px",
-          backgroundColor: happyHour ? "rgba(255,107,107,0.12)" : "rgba(255,255,255,0.04)",
-          border: `1px solid ${happyHour ? "rgba(255,107,107,0.35)" : "rgba(255,255,255,0.08)"}`
+          backgroundColor: happyHour ? "rgba(91,200,232,0.12)" : "rgba(255,255,255,0.04)",
+          border: `1px solid ${happyHour ? "rgba(91,200,232,0.35)" : "rgba(255,255,255,0.08)"}`
         }}>
           <p style={{ fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#5BC8E8", marginBottom: "0.3rem" }}>
             🍹 Happy Hour
@@ -109,8 +122,8 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
         </div>
       )}
 
-      {/* Daily Specials */}
-      {todaySpecials.length > 0 && (
+      {/* Today's Specials */}
+      {todaySpecials.length > 0 && !showAllSpecials && (
         <div style={{
           margin: "0.75rem 1rem",
           padding: "0.75rem",
@@ -129,6 +142,45 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
         </div>
       )}
 
+      {/* All Week Specials (expanded) */}
+      {showAllSpecials && hasWeeklySpecials && (
+        <div style={{
+          margin: "0.75rem 1rem",
+          padding: "0.75rem",
+          borderRadius: "10px",
+          backgroundColor: "rgba(78,205,196,0.08)",
+          border: "1px solid rgba(78,205,196,0.2)"
+        }}>
+          <p style={{ fontSize: "0.72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "#4ECDC4", marginBottom: "0.5rem" }}>
+            ⭐ Weekly Specials
+          </p>
+          {allSpecialsByDay.map(({ day, deals }) => (
+            <div key={day} style={{ marginBottom: "0.5rem" }}>
+              <p style={{ fontSize: "0.8rem", fontWeight: 700, color: day === todayKey ? "#4ECDC4" : "#c8e6f5", marginBottom: "0.15rem" }}>
+                {DAY_LABELS[day]}{day === todayKey ? " (today)" : ""}
+              </p>
+              <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
+                {deals.map((deal, i) => (
+                  <li key={i} style={{ fontSize: "0.85rem", color: "#a8cfe0" }}>• {deal}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* See all specials toggle */}
+      {hasWeeklySpecials && (
+        <div style={{ padding: "0 1rem 0.5rem" }}>
+          <button
+            onClick={() => setShowAllSpecials(v => !v)}
+            style={{ background: "none", border: "none", color: "#5BC8E8", fontSize: "0.82rem", cursor: "pointer", padding: 0, textDecoration: "underline" }}
+          >
+            {showAllSpecials ? "▲ Hide weekly specials" : "▼ See all weekly specials"}
+          </button>
+        </div>
+      )}
+
       {/* Footer row */}
       <div style={{ padding: "0.75rem 1rem", borderTop: "1px solid rgba(255,255,255,0.07)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -137,7 +189,6 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
               📞 {r.phone}
             </a>
           )}
-
         </div>
         {onMapFocus && (
           <button onClick={() => onMapFocus(r.id)} style={{ color: "#8bb8d4", background: "none", border: "none", cursor: "pointer", fontSize: "0.82rem" }}>
