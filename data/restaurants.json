@@ -834,6 +834,151 @@
     "notes": "Irish pub & grill. Live music, pool table, dog-friendly back patio. Soccer, rugby, NFL, MLB. Open until 2am daily."
   },
   {
+    "id": "hodads",
+    "name": "Hodad's",
+    "address": "5010 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7456, -117.2543],
+    "phone": null,
+    "website": "https://hodadsoceanbeach.com/",
+    "hours": {
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "21:00" },
+      "sat": { "open": "11:00", "close": "21:00" },
+      "sun": { "open": "11:00", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Legendary OB burger joint. Famous bacon double cheeseburger. Featured on Diners, Drive-ins & Dives."
+  },
+  {
+    "id": "bbq-house-ob",
+    "name": "BBQ House Bar & Grill",
+    "address": "5025 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7456, -117.2545],
+    "phone": null,
+    "website": "https://bbqhouseob.com/",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "BBQ bar & grill on Newport Ave. Dog-friendly, outdoor seating, happy hour. Hours TBD."
+  },
+  {
+    "id": "pizzeria-luigi-ob",
+    "name": "Pizzeria Luigi",
+    "address": "1769 Garnet Ave, San Diego, CA 92109",
+    "coords": [32.7990, -117.2344],
+    "phone": null,
+    "website": "https://pizzerialuigi.com/",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Award-winning NY-style pizza. Small bar with draft beer. Hours TBD."
+  },
+  {
+    "id": "we-be-ob",
+    "name": "We Be OB",
+    "address": "2525 Bacon St, Ocean Beach, CA 92107",
+    "coords": [32.7520, -117.2467],
+    "phone": null,
+    "website": "https://webeob.com/",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": null
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Community café at Robb Field. Sandwiches, smoothies, beer & acai bowls. Employs adults with autism. Happy hour offered."
+  },
+  {
+    "id": "rosemaries-ob",
+    "name": "Rosemarie's Buns & Brew",
+    "address": "1774 Sunset Cliffs Blvd, Ocean Beach, CA 92107",
+    "coords": [32.7399, -117.2498],
+    "phone": null,
+    "website": "https://rosemariesburgers.com/",
+    "hours": {
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "21:00" },
+      "sat": { "open": "11:00", "close": "21:00" },
+      "sun": { "open": "11:00", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Creative sliders & burgers. OB location of Mission Beach favorite. Blue cheese bacon fries are a must."
+  },
+  {
+    "id": "kaiserhof",
+    "name": "Kaiserhof Restaurant & Biergarten",
+    "address": "2253 Sunset Cliffs Blvd, Ocean Beach, CA 92107",
+    "coords": [32.7348, -117.2467],
+    "phone": null,
+    "website": "https://www.kaiserhofrestaurant.com/",
+    "hours": {
+      "mon": null,
+      "tue": null,
+      "wed": { "open": "16:00", "close": "21:00" },
+      "thu": { "open": "16:00", "close": "21:00" },
+      "fri": { "open": "12:00", "close": "21:00" },
+      "sat": { "open": "12:00", "close": "21:00" },
+      "sun": { "open": "12:00", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Award-winning German restaurant & biergarten. Wienerschnitzel, Sauerbraten, German draft beer. Closed Mon–Tue."
+  },
+  {
+    "id": "johnny-mananas-ob",
+    "name": "Johnny Mañana's",
+    "address": "4888 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7453, -117.2522],
+    "phone": null,
+    "website": "https://johnnymananas.com/",
+    "hours": {
+      "mon": { "open": "09:00", "close": "21:00" },
+      "tue": { "open": "09:00", "close": "21:00" },
+      "wed": { "open": "09:00", "close": "21:00" },
+      "thu": { "open": "09:00", "close": "21:00" },
+      "fri": { "open": "09:00", "close": "21:00" },
+      "sat": { "open": "09:00", "close": "21:00" },
+      "sun": { "open": "09:00", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [
+      { "day": "mon", "deals": ["Margarita Monday: $8 Johnny's World Famous Margarita"] },
+      { "day": "tue", "deals": ["Taco Tuesday: $2.50 street tacos"] },
+      { "day": "wed", "deals": ["Wine Wednesday: 50% off all wine bottles, $2 off glass of wine"] },
+      { "day": "thu", "deals": ["Thirsty Thursday: $7 Michelada"] }
+    ],
+    "notes": "Authentic Mexican food since 1989. Home of the world-famous $3.50 crispy fish taco."
+  },
+  {
     "id": "ob-sushiya",
     "name": "OB Sushiya",
     "address": "4967 Newport Ave, Ocean Beach, CA 92107",
