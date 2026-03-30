@@ -834,6 +834,35 @@
     "notes": "Irish pub & grill. Live music, pool table, dog-friendly back patio. Soccer, rugby, NFL, MLB. Open until 2am daily."
   },
   {
+    "id": "ob-sushiya",
+    "name": "OB Sushiya",
+    "address": "4967 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7456, -117.2527],
+    "phone": null,
+    "website": "https://obsushiya.com/",
+    "hours": {
+      "mon": { "open": "12:00", "close": "21:30" },
+      "tue": { "open": "12:00", "close": "21:30" },
+      "wed": { "open": "12:00", "close": "21:30" },
+      "thu": { "open": "12:00", "close": "21:30" },
+      "fri": { "open": "12:00", "close": "21:30" },
+      "sat": { "open": "12:00", "close": "21:30" },
+      "sun": { "open": "12:00", "close": "21:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "12:00",
+      "end": "18:00",
+      "deals": [
+        "15% off appetizers",
+        "15% off classic sushi rolls",
+        "10% off special rolls, premium rolls, sashimi, nigiri & hand rolls"
+      ]
+    },
+    "dailySpecials": [],
+    "notes": "Fresh sushi with creative rolls and affordable prices. Happy hour dine-in & to-go."
+  },
+  {
     "id": "long-story-irish-pub",
     "name": "Long Story Irish Pub",
     "address": "4204 Voltaire St, Ocean Beach, CA 92107",
