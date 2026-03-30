@@ -834,6 +834,31 @@
     "notes": "Irish pub & grill. Live music, pool table, dog-friendly back patio. Soccer, rugby, NFL, MLB. Open until 2am daily."
   },
   {
+    "id": "long-story-irish-pub",
+    "name": "Long Story Irish Pub",
+    "address": "4204 Voltaire St, Ocean Beach, CA 92107",
+    "coords": [32.7432, -117.2486],
+    "phone": null,
+    "website": "https://longstoryirishpub.com/",
+    "hours": {
+      "mon": { "open": "12:00", "close": "01:30" },
+      "tue": { "open": "12:00", "close": "01:30" },
+      "wed": { "open": "12:00", "close": "01:30" },
+      "thu": { "open": "12:00", "close": "01:30" },
+      "fri": { "open": "12:00", "close": "01:30" },
+      "sat": { "open": "12:00", "close": "01:30" },
+      "sun": { "open": "10:00", "close": "01:30" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "16:00",
+      "end": "19:00",
+      "deals": ["$2 off all drafts", "$1 off all liquor"]
+    },
+    "dailySpecials": [],
+    "notes": "Irish pub with live music, board games, nitro Guinness tap. Open until 1:30am daily. Sunday brunch from 10am."
+  },
+  {
     "id": "tilted-stick",
     "name": "The Tilted Stick Bar & Grill",
     "address": "4970 Voltaire St, Ocean Beach, CA 92107",
