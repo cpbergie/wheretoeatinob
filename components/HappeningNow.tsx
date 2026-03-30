@@ -51,7 +51,7 @@ export default function HappeningNow({ restaurants, showAll, onToggle, tick: _ti
             whiteSpace: "nowrap"
           }}
         >
-          {showAll ? "Show Active Only" : "View All Places"}
+          {showAll ? "Show Happy Hour Only" : "View All Places"}
         </button>
       </div>
     </div>

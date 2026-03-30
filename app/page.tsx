@@ -32,7 +32,7 @@ export default function Home() {
 
   const displayedRestaurants = showAll
     ? sortedRestaurants
-    : sortedRestaurants.filter(r => isOpenNow(r) || isHappyHourNow(r.happyHour));
+    : sortedRestaurants.filter(r => isHappyHourNow(r.happyHour));
 
   const handleMapFocus = (id: string) => {
     setMapFocusId(id);
@@ -103,7 +103,7 @@ export default function Home() {
           {!showAll && displayedRestaurants.length === 0 && (
             <div style={{ gridColumn: "1/-1", textAlign: "center", padding: "3rem", color: "#8bb8d4" }}>
               <div style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>😴</div>
-              <p style={{ fontSize: "1.1rem", fontWeight: 600 }}>Nothing active right now</p>
+              <p style={{ fontSize: "1.1rem", fontWeight: 600 }}>No happy hours active right now</p>
               <button onClick={() => setShowAll(true)} style={{ marginTop: "1rem", color: "#4ECDC4", background: "none", border: "none", textDecoration: "underline", cursor: "pointer", fontSize: "1rem" }}>
                 View all places
               </button>
