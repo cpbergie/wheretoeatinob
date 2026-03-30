@@ -11,6 +11,7 @@ const restaurants = restaurantsData as Restaurant[];
 
 export default function Home() {
   const [showAll, setShowAll] = useState(true);
+  const [search, setSearch] = useState("");
   const [mounted, setMounted] = useState(false);
   const [tick, setTick] = useState(0);
 
@@ -26,9 +27,18 @@ export default function Home() {
     return bScore - aScore;
   });
 
+  const searchFiltered = search.trim()
+    ? sortedRestaurants.filter(r =>
+        r.name.toLowerCase().includes(search.toLowerCase()) ||
+        r.notes?.toLowerCase().includes(search.toLowerCase()) ||
+        r.happyHour?.deals.some(d => d.toLowerCase().includes(search.toLowerCase())) ||
+        r.dailySpecials.some(s => s.deals.some(d => d.toLowerCase().includes(search.toLowerCase())))
+      )
+    : sortedRestaurants;
+
   const displayedRestaurants = showAll
-    ? sortedRestaurants
-    : sortedRestaurants.filter(r => isHappyHourNow(r.happyHour));
+    ? searchFiltered
+    : searchFiltered.filter(r => isHappyHourNow(r.happyHour));
 
   return (
     <main style={{ backgroundColor: "#071f33", minHeight: "100vh", color: "#fff", overflowX: "hidden" }}>
@@ -70,6 +80,27 @@ export default function Home() {
               tick={tick}
             />
           )}
+        </div>
+
+        {/* Search */}
+        <div style={{ marginBottom: "1.25rem" }}>
+          <input
+            type="text"
+            placeholder="🔍 Search restaurants, deals, drinks..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "0.75rem 1rem",
+              borderRadius: "12px",
+              border: "1px solid #1e5f8a",
+              backgroundColor: "#0e2d45",
+              color: "#fff",
+              fontSize: "0.95rem",
+              outline: "none",
+              boxSizing: "border-box"
+            }}
+          />
         </div>
 
         {/* Cards — responsive grid */}

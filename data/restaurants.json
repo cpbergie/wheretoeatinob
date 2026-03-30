@@ -506,6 +506,46 @@
     "notes": "Taco spot with outdoor playground vibes. Free chips + guac or churros on $20+ online orders."
   },
   {
+    "id": "ulivo-restaurant",
+    "name": "Ulivo Restaurant",
+    "address": "1776 Sunset Cliffs Blvd, Ocean Beach, CA 92107",
+    "coords": [32.7398, -117.2497],
+    "phone": null,
+    "website": "http://www.ulivorestaurant.com/",
+    "hours": {
+      "mon": null,
+      "tue": { "open": "16:30", "close": "21:00" },
+      "wed": { "open": "16:30", "close": "21:00" },
+      "thu": { "open": "16:30", "close": "21:00" },
+      "fri": { "open": "16:30", "close": "21:00" },
+      "sat": { "open": "16:30", "close": "21:00" },
+      "sun": { "open": "16:30", "close": "21:00" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Casual Italian. Salads, pastas, grilled seafood & artisanal pizzas. Closed Mondays."
+  },
+  {
+    "id": "elvira-osteria",
+    "name": "Elvira Osteria",
+    "address": "4996 W Point Loma Blvd, Ocean Beach, CA 92107",
+    "coords": [32.7461, -117.2553],
+    "phone": null,
+    "website": "https://www.ciaoelvira.com/",
+    "hours": {
+      "mon": { "open": "16:00", "close": "21:30" },
+      "tue": { "open": "16:00", "close": "21:30" },
+      "wed": { "open": "16:00", "close": "21:30" },
+      "thu": { "open": "16:00", "close": "21:30" },
+      "fri": { "open": "16:00", "close": "21:30" },
+      "sat": { "open": "12:00", "close": "21:30" },
+      "sun": { "open": "12:00", "close": "21:30" }
+    },
+    "happyHour": null,
+    "dailySpecials": [],
+    "notes": "Italian osteria — feels like dining at Nonna's house. Weekend brunch from noon."
+  },
+  {
     "id": "ob-brewery",
     "name": "OB Brewery",
     "address": "5041 Newport Ave, Ocean Beach, CA 92107",
