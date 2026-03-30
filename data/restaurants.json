@@ -476,6 +476,31 @@
     "notes": "Fresh local seafood, fish tacos, market & grill. OB location only for specials."
   },
   {
+    "id": "ob-brewery",
+    "name": "OB Brewery",
+    "address": "5041 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7456, -117.2541],
+    "phone": null,
+    "website": "https://obbrewingco.com/",
+    "hours": {
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "22:00" },
+      "sat": { "open": "11:00", "close": "22:00" },
+      "sun": { "open": "11:00", "close": "21:00" }
+    },
+    "happyHour": {
+      "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+      "start": "15:00",
+      "end": "18:00",
+      "deals": ["Daily happy hour specials"]
+    },
+    "dailySpecials": [],
+    "notes": "3-story craft brewery with rooftop ocean views. Dog-friendly. Shuffleboard, foosball, firepits. Award-winning house brews."
+  },
+  {
     "id": "northside-tavern",
     "name": "Northside Tavern",
     "address": "2228 Bacon St, Ocean Beach, CA 92107",
