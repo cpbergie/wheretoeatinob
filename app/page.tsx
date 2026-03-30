@@ -21,10 +21,17 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  const countSpecials = (r: Restaurant) => {
+    const hhDeals = r.happyHour?.deals.length ?? 0;
+    const dailyDeals = r.dailySpecials.reduce((acc, s) => acc + s.deals.length, 0);
+    return hhDeals + dailyDeals;
+  };
+
   const sortedRestaurants = [...restaurants].sort((a, b) => {
-    const aScore = isHappyHourNow(a.happyHour) ? 2 : isOpenNow(a) ? 1 : 0;
-    const bScore = isHappyHourNow(b.happyHour) ? 2 : isOpenNow(b) ? 1 : 0;
-    return bScore - aScore;
+    const aStatus = isHappyHourNow(a.happyHour) ? 2 : isOpenNow(a) ? 1 : 0;
+    const bStatus = isHappyHourNow(b.happyHour) ? 2 : isOpenNow(b) ? 1 : 0;
+    if (bStatus !== aStatus) return bStatus - aStatus;
+    return countSpecials(b) - countSpecials(a);
   });
 
   const searchFiltered = search.trim()
