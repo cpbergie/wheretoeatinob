@@ -861,13 +861,13 @@
     "phone": null,
     "website": "https://bbqhouseob.com/",
     "hours": {
-      "mon": null,
-      "tue": null,
-      "wed": null,
-      "thu": null,
-      "fri": null,
-      "sat": null,
-      "sun": null
+      "mon": { "open": "11:00", "close": "21:00" },
+      "tue": { "open": "11:00", "close": "21:00" },
+      "wed": { "open": "11:00", "close": "21:00" },
+      "thu": { "open": "11:00", "close": "21:00" },
+      "fri": { "open": "11:00", "close": "22:00" },
+      "sat": { "open": "11:00", "close": "22:00" },
+      "sun": { "open": "11:00", "close": "21:00" }
     },
     "happyHour": null,
     "dailySpecials": [],
@@ -876,8 +876,8 @@
   {
     "id": "pizzeria-luigi-ob",
     "name": "Pizzeria Luigi",
-    "address": "1769 Garnet Ave, San Diego, CA 92109",
-    "coords": [32.7990, -117.2344],
+    "address": "5001 Newport Ave, Ocean Beach, CA 92107",
+    "coords": [32.7456, -117.2540],
     "phone": null,
     "website": "https://pizzerialuigi.com/",
     "hours": {
