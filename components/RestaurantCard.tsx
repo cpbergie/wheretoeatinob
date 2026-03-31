@@ -102,7 +102,7 @@ export default function RestaurantCard({ restaurant: r, onMapFocus }: Props) {
         {/* Today's hours */}
         <p style={{ color: "#8bb8d4", fontSize: "0.85rem", marginTop: "0.5rem" }}>
           <strong style={{ color: "#c8e6f5" }}>{DAY_LABELS[todayKey]}:</strong>{" "}
-          {todayHours ? `${formatTime(todayHours.open)} – ${formatTime(todayHours.close)}` : "Hours not listed"}
+          {todayHours === null && Object.values(r.hours).some(h => h !== null) ? "Closed today" : todayHours ? `${formatTime(todayHours.open)} – ${formatTime(todayHours.close)}` : "Hours not listed"}
         </p>
       </div>
 
